@@ -7,7 +7,7 @@ const signupController = (req: Request, res: Response) => {
 
   signupService.signupService(signupData);
 
-  return res.status(201).json({ message: "User Created" });
+  res.status(201).json({ message: "User Created" });
 };
 
 export default { signupController };
