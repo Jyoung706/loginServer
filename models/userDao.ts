@@ -18,7 +18,7 @@ const createUser = (signupData: createUserDto) => {
   myDataSource.query(
     `INSERT INTO
       users (account, password, phone_number, address, birth)
-      values (?,?,?,?,?);
+      VALUES (?,?,?,?,?);
     `,
     [
       signupData.account,
